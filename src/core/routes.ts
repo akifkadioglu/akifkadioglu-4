@@ -1,3 +1,4 @@
 export const routes = {
-  ABOUT_ME: "/about-me",
+  BLOG: "https://blog.akifkadioglu.dev/",
+  RESUME: "/resume.pdf",
 };
