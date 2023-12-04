@@ -1,3 +1,3 @@
 export const routes = {
-  DASHBOARD: "/dashboard",
+  ABOUT_ME: "/about-me",
 };

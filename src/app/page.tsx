@@ -18,11 +18,11 @@ export default function Home() {
   const pages = [
     {
       title: "About Me",
-      link: routes.DASHBOARD
+      link: routes.ABOUT_ME
     },
     {
       title: "Resume",
-      link: routes.DASHBOARD
+      link: routes.ABOUT_ME
     },
   ]
   const accounts = [
