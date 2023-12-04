@@ -70,7 +70,7 @@ export default function Home() {
           {
             pages.map((e, index) =>
               <>
-                <Link href={e.link} className='underline' >
+                <Link href={e.link} className='underline' key={index} >
                   {e.title}
                 </Link>
                 {index < pages.length - 1 ? <span className='mx-2'>|</span> : ''}
@@ -98,8 +98,8 @@ export default function Home() {
           <Divider text={dividerText} />
           <div className='flex space-x-7 justify-center' >
             {
-              accounts.map(e =>
-                <Link href={e.link} target='_blank'>
+              accounts.map((e, index) =>
+                <Link href={e.link} target='_blank' key={index}>
                   <e.icon size={accountLogoSize} color={e.color} />
                 </Link>)
             }
