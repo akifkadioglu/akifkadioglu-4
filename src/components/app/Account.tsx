@@ -54,16 +54,13 @@ export const Account = () => {
 
             <div className='text-center space-y-2 space-x-5' >
                 {
-                    accounts.map(
-                        (e, index) =>
-                            <button key={index}>
-                                <Link href={e.link} target='_blank'>
-                                    <e.icon size={accountLogoSize} color={e.color} />
-                                </Link>
-                            </button>
-
+                    accounts.map((e, index) =>
+                        <button aria-label={e.link} key={index}>
+                            <Link aria-label={e.link} href={e.link} target='_blank'>
+                                <e.icon size={accountLogoSize} color={e.color} />
+                            </Link>
+                        </button>
                     )
-
                 }
             </div>
         </div>

@@ -9,6 +9,7 @@ export const ThemeSwitch = () => {
     const [mounted, setMounted] = useState(false)
     const { theme, setTheme } = useTheme()
 
+    const buttonLabel = "theme switcher"
 
     useEffect(() => {
         setMounted(true)
@@ -22,11 +23,11 @@ export const ThemeSwitch = () => {
         <div>
             {
                 theme == "dark" ?
-                    <button onClick={() => setTheme("light")}>
+                    <button aria-label={buttonLabel} onClick={() => setTheme("light")}>
                         <MdSunny color="#fcd34d" size={iconSize} />
                     </button>
                     :
-                    <button onClick={() => setTheme("dark")}>
+                    <button aria-label={buttonLabel} onClick={() => setTheme("dark")}>
                         <PiMoonFill color="#083344" size={iconSize} />
                     </button>
             }
