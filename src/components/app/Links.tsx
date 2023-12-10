@@ -7,10 +7,7 @@ import Link from 'next/link';
 
 export const Links = () => {
     const pages = [
-        {
-            title: "Blog",
-            link: routes.BLOG
-        },
+
         {
             title: "Resume",
             link: routes.RESUME
