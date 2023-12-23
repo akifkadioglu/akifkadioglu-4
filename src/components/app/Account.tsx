@@ -10,7 +10,7 @@ import { BiLogoTelegram } from "react-icons/bi";
 import Link from "next/link";
 
 export const Account = () => {
-    const dividerText = "Accounts";
+    const dividerText = "Online";
     const accountLogoSize = 30
     const accounts = [
         {

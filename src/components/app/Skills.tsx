@@ -1,6 +1,7 @@
 /* icon */
 import { FaGolang } from "react-icons/fa6";
 import { FaVuejs, FaReact } from "react-icons/fa";
+import { RiFlutterFill } from "react-icons/ri";
 
 /* core */
 import React from "react";
@@ -25,6 +26,11 @@ export const Skills = () => {
             icon: FaReact,
             title: "React js",
             color: "#61dbfb"
+        },
+        {
+            icon: RiFlutterFill,
+            title: "Flutter",
+            color: "#42A5F5"
         }
     ]
     const logoSize = 40

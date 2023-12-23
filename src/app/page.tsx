@@ -1,10 +1,7 @@
-
-
 /* core */
 import React from "react";
 
 /* component */
-import { ThemeSwitch } from "@/components/ThemeSwitcher";
 import { Account } from "@/components/app/Account";
 import { Links } from "@/components/app/Links";
 import { Description } from "@/components/app/Description";
@@ -17,7 +14,6 @@ export default function Home() {
 
 
   return (
-
     <div className='space-y-16 my-10'>
       <Links />
       <Header />
