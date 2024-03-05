@@ -11,13 +11,15 @@ import { Skills } from "@/components/app/Skills";
 
 export default function Home() {
   return (
-    <div className='space-y-16 my-10'>
+    <div>
       <Header />
-      <Skills />
-      <Description />
-      <Account />
-      <Footer />
-      <Links />
+      <div className="space-y-16 my-10">
+        <Skills />
+        <Description />
+        <Account />
+        <Footer />
+        <Links />
+      </div>
     </div>
-  )
+  );
 }
