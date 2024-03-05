@@ -10,17 +10,14 @@ import { Header } from "@/components/app/Header";
 import { Skills } from "@/components/app/Skills";
 
 export default function Home() {
-
-
-
   return (
     <div className='space-y-16 my-10'>
-      <Links />
       <Header />
       <Skills />
       <Description />
       <Account />
       <Footer />
+      <Links />
     </div>
   )
 }

@@ -1,30 +1,42 @@
+"use client";
 /* utils */
-import { routes } from "@/core/routes"
+import { routes } from "@/core/routes";
 
 /* core */
-import React from "react";
-import Link from 'next/link';
+import React, { useEffect } from "react";
 
 export const Links = () => {
-    const pages = [
+  const projects = [
+    {
+      title: "P-Okul",
+      link: routes.POKUL,
+      description:
+        "Pamukkale üniversitesi için oluşturulmuş sosyal medya uygulaması",
+      things: ["Nuxt 3", "Tailwind", "Netlify"],
+    },
+  ];
 
-        {
-            title: "Resume",
-            link: routes.RESUME
-        },
-    ]
-    return (
-        <center>
-            {
-                pages.map((e, index) =>
-                    <React.Fragment key={index} >
-                        <Link href={e.link} className='underline' target="_blank">
-                            {e.title}
-                        </Link>
-                        {index < pages.length - 1 ? <span className='mx-2'>|</span> : ''}
-                    </React.Fragment >
-                )
-            }
-        </center>
-    )
-}
+  useEffect(() => {
+    console.log(
+      `%cProjeler`,
+      "font-weight: bold; font-size: 25px; color:#164e63"
+    );
+    console.log("\n\n");
+
+    for (let index = 0; index < projects.length; index++) {
+      const element = projects[index];
+      console.log(
+        `%c${element.title}`,
+        "font-weight: bold; font-size: 18px; color:#0e7490"
+      );
+      console.log(element.description);
+      console.log(element.link);
+      console.log(element.things.join(" | "));
+      if (index < projects.length - 1) {
+        console.log("\n\n\n");
+      }
+    }
+  }, []);
+
+  return <div className="fixed"></div>;
+};
