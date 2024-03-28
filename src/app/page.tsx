@@ -8,6 +8,7 @@ import { Description } from "@/components/app/Description";
 import { Footer } from "@/components/app/Footer";
 import { Header } from "@/components/app/Header";
 import { Skills } from "@/components/app/Skills";
+import { ConfettiParticles } from "@/components/Particles";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Account />
         <Footer />
         <Links />
+        <ConfettiParticles />
       </div>
     </div>
   );

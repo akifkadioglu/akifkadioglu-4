@@ -33,7 +33,7 @@ export const ThemeSwitch = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <MdSunny color="#fcd34d" size={iconSize} />
+            <MdSunny color="#ffcd3c" size={iconSize} />
           </motion.b>
         ) : (
           <motion.b
