@@ -35,7 +35,7 @@ export const Account = () => {
         },
         {
             icon: IoMdMail,
-            link: "mailto: akifkadioglu@yaani.com",
+            link: "mailto: akif.kadioglu.28@gmail.com",
             color: "#EA4335",
         }, {
             icon: FaInstagram,
