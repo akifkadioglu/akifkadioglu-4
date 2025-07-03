@@ -25,7 +25,7 @@ export const Account = () => {
         },
         {
             icon: FaLinkedin,
-            link: "https://www.linkedin.com/in/akif-kadioglu-88429a1b2/",
+            link: "https://www.linkedin.com/in/akifkadioglu/",
             color: "#0072B1",
         },
         {
